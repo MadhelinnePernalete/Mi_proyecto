@@ -1,0 +1,5 @@
+#No subir contraseñas ni archivos temporales conexion/config.local.php
+.env
+.vscode
+.trumbs.db
+.DS_Store
