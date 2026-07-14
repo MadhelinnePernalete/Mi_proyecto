@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS mi_proyecto_bd
+CHARACTER SET utf8mb4_unicode_ci;
+USE mi_proyecto_bd;
+
+CREATE TABLE IF NOT EXISTS usuarios(
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR (255) NOT NULL,
+    correo (255) NOT NULL UNIQUE,
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
+) ENGINE =InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
